@@ -16,7 +16,3 @@ div#book-inner * {
 	-webkit-text-combine: inherit;
 }
 
-/* Full-screen workaround (cf. http://www.mobileread.com/forums/showpost.php?p=3003029&postcount=57) */
-div#book-inner {
-	padding: 0 0.2em;
-}
