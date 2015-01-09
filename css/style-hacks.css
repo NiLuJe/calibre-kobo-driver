@@ -1,0 +1,22 @@
+div#book-inner p, div#book-inner div {
+	font-size: 1.0em;
+}
+a {
+	color: black;
+}
+a:link, a:visited, a:hover, a:active {
+	color: blue;
+}
+div#book-inner * {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.koboSpan {
+	-webkit-text-combine: inherit;
+}
+
+/* Full-screen workaround (cf. http://www.mobileread.com/forums/showpost.php?p=3003029&postcount=57) */
+div#book-inner {
+	padding: 0 0.2em;
+}
