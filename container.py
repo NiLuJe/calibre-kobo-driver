@@ -332,7 +332,6 @@ class KEPubContainer(EpubContainer):
                 continue
             body = root.xpath('./xhtml:body', namespaces={'xhtml': XHTML_NAMESPACE})[0]
             body = self.__add_kobo_divs_to_node(body)
-            root = etree.tostring(root, pretty_print=True)
             self.dirty(name)
         self.flush_cache()
         return True
