@@ -12,7 +12,3 @@ div#book-inner * {
 	margin-bottom: 0 !important;
 }
 
-.koboSpan {
-	-webkit-text-combine: inherit;
-}
-
