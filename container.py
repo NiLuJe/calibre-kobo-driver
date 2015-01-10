@@ -327,6 +327,7 @@ class KEPubContainer(EpubContainer):
                 continue
             # NOTE: Hackish heuristic: Forgo this if we have more div's than p's, which would potentially indicate a book using div's instead of p's...
             # Apparently, doing this on those books appears to blow up in a spectacular way, so, err, don't ;).
+            # FIXME: Try to figure out what's really happening instead of sidestepping the issue?
             if root.xpath('count(//xhtml:div)', namespaces={'xhtml': XHTML_NAMESPACE}) > root.xpath('count(//xhtml:p)', namespaces={'xhtml': XHTML_NAMESPACE}):
                 self.log.info("\tSkipping file (many divs! handle it!)")
                 continue
